@@ -24,7 +24,7 @@ const formvalidationSchema = yup.object({
 })
 const EditMentor = ({mentor}) => {
   const params = useParams();
-  const Index = mentor.findIndex((item) => item.id == params.id);
+  const Index = mentor.findIndex((item) => item.id === params.id);
   const details = mentor[Index];
 
   const navigate = useNavigate();
